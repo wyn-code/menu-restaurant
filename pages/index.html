@@ -9,21 +9,28 @@
       rel="stylesheet"
     />
     <title>Hantabani</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <header class="principal">
       <nav>
         <ul>
-          <a href="#"
+          <a href="./index.html"
             ><img
               src="/img/logo.png"
               alt="Logo del restaurante"
               class="principal-imagen"
           /></a>
-          <li><a href="#" class="principal-inicio">Inicio</a></li>
-          <li><a href="" class="principal-menu">Menu</a></li>
-          <li><a href="" class="principal-reservas">Reservas</a></li>
-          <li><a href="" class="principal-contacto">Contacto</a></li>
+          <li>
+            <a href="./index.html" class="principal-inicio">Inicio</a>
+          </li>
+          <li><a href="#menu" class="principal-menu">Menu</a></li>
+          <li><a href="#reservas" class="principal-reservas">Reservas</a></li>
+          <li><a href="#contacto" class="principal-contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -41,7 +48,7 @@
       </div>
     </section>
 
-    <section class="section-menu">
+    <section id="menu" class="section-menu">
       <div class="box-entradas">
         <div class="title-descrp-butt">
           <h3 class="title">Entradas</h3>
@@ -113,7 +120,9 @@
             </p>
           </div>
           <div class="boton-ruta">
-            <button>+</button>
+            <a href="/pages/bebidas/bebidas.html">
+              <button>+</button>
+            </a>
           </div>
         </div>
         <div class="box-img-bebidas">
@@ -150,7 +159,7 @@
           <img src="/img/yokan.jpeg" alt="Imagen de yokan" class="ph-postre" />
         </div>
       </div>
-      <div class="box-reservas">
+      <div class="box-reservas" id="reservas">
         <div class="title-descrp-butt">
           <h3 class="title">Reservas</h3>
           <div class="texto">
@@ -179,7 +188,7 @@
       </div>
     </section>
 
-    <footer class="footer-menu">
+    <footer class="footer-menu" id="contacto">
       <div class="menu-footer">
         <p>
           Horarios:<br />
