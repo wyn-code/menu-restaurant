@@ -1,5 +1,5 @@
 :root {
-    --color-font:#222839;
+    --color-font: #222839;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 /******HEADER******/
 
-.principal  {
+.principal {
     background: linear-gradient(220.55deg, #EAEAEA 0%, #8b8b8b 100%);
     width: 100%;
     box-shadow: 0 0 5px;
@@ -20,17 +20,16 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
     gap: 100px;
-    
 }
 
 .principal li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .principal li a {
@@ -40,7 +39,7 @@ body {
 }
 
 .principal a {
-    margin-left:30px;
+    margin-left: 30px;
     transition: color 0.3s;
 }
 
@@ -66,6 +65,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .box-form {
     margin: 30px;
     padding: 10px;
@@ -81,8 +81,8 @@ h1 {
     justify-content: center;
     color: var(--color-font);
     font-size: 40px;
-    border-bottom: 2px solid var(--color-font); 
-    padding-bottom: 10px; 
+    border-bottom: 2px solid var(--color-font);
+    padding-bottom: 10px;
     width: 80%;
 }
 
@@ -97,7 +97,6 @@ h1 {
     margin: 0;
 }
 
-
 .box-input input {
     border-radius: 20px;
     margin: 0;
@@ -110,7 +109,7 @@ h1 {
 }
 
 .boton button {
-    background-color:#333742;
+    background-color: #333742;
     color: #fff;
     width: 100px;
     height: 40px;
@@ -126,7 +125,6 @@ h1 {
     box-shadow: 0 0 0 5px #3b83f65f;
     color: #fff;
 }
-
 
 /******FOOTER******/
 
@@ -155,7 +153,6 @@ footer {
     color: var(--color-font);
 }
 
-
 .menu-footer a {
     text-align: none;
     text-decoration: none;
@@ -171,4 +168,85 @@ footer {
 
 .redes img:hover {
     width: 60px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .principal ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .principal li a {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .principal-imagen {
+        width: 80px;
+    }
+
+    .principal-imagen:hover {
+        width: 100px;
+    }
+
+    .box-form {
+        width: 90%;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .menu-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-footer p {
+        margin: 10px 0;
+    }
+
+    .redes {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .principal li a {
+        font-size: 20px;
+    }
+
+    .principal-imagen {
+        width: 60px;
+    }
+
+    .principal-imagen:hover {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .boton button {
+        width: 80px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .menu-footer p {
+        font-size: 16px;
+    }
+
+    .redes img {
+        width: 40px;
+    }
+
+    .redes img:hover {
+        width: 50px;
+    }
 }
