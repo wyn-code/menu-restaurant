@@ -13,7 +13,6 @@ body {
 
 .principal  {
     background: linear-gradient(220.55deg, #EAEAEA 0%, #8b8b8b 100%);
-    width: 100%;
 }
 
 .principal ul {
@@ -64,8 +63,6 @@ body {
     color: var(--color-font);
     text-decoration: none;
 }
-
-
 
 .imagen-container {
     width: 100%; 
@@ -410,10 +407,104 @@ body {
     width: 60px;
 }
 
-
-
-
-
-
-
-
+@media screen and (max-width: 768px) {
+    /* Header */
+    .principal ul {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .principal li a {
+      font-size: 24px;
+    }
+  
+    .principal-imagen {
+      width: 80px;
+    }
+  
+    .principal-imagen:hover {
+      width: 100px;
+    }
+  
+    /* Image Presentation */
+    .imagen-container {
+      height: 50vh;
+    }
+  
+    /* Menu del Día */
+    .mdd-title {
+      font-size: 30px;
+      width: 90%;
+      margin: 20px 0;
+    }
+  
+    .img-mdd {
+      flex-direction: column;
+    }
+  
+    .imagenes-mdd {
+      height: 200px;
+      margin-bottom: 10px;
+    }
+  
+    /* Sections */
+    .box-entradas,
+    .box-platos,
+    .box-bebidas,
+    .box-postres,
+    .box-reservas,
+    .box-video {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .box-img-entradas img,
+    .box-img-platos img,
+    .box-img-bebidas img,
+    .box-img-postres img,
+    .box-img-reservas img,
+    .box-video video {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .texto {
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 36px;
+    }
+  
+    .descripcion {
+      width: 100%;
+    }
+  
+    /* Footer */
+    .footer-menu {
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .menu-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu-footer p {
+      margin: 5px 0;
+    }
+  
+    .redes {
+      margin-top: 10px;
+    }
+  
+    .redes img {
+      width: 40px;
+    }
+  
+    .redes img:hover {
+      width: 45px;
+    }
+  }
